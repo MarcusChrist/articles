@@ -87,7 +87,7 @@ create table articledb.articles (
 #### First Login
 
 Use the button "First user to login?" for tests.
-Since we need atleast one admin in this application and we use this function to setup the first admin.
+Since we need atleast one admin in this application we use this function to setup the first admin.
 
 
 #### Enjoy
