@@ -42,6 +42,8 @@ Server now runs on localhost:9000
 
 Create a .env file in backend directory and write:
 
+```js
+
 ACCESS_TOKEN_SECRET=**Some secret**
 HOST=localhost
 USER=**username**
@@ -50,7 +52,7 @@ DB=articledb
 ORIGIN=http://localhost:8080
 SERVER=http://localhost:9000/api/v1/
 
-
+```
 
 #### Database
 
