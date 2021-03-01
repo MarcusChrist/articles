@@ -40,14 +40,15 @@ Server now runs on localhost:9000
 
 #### .env
 
-Create a .env file in backend directory and write:
+Create a .env file in backend directory and configure it as below for localhost.
+Dont forget to change username, password and secret.
 
 ```js
 
-ACCESS_TOKEN_SECRET=**Some secret**
+ACCESS_TOKEN_SECRET=secret
 HOST=localhost
-USER=**username**
-PASSWORD=**password**
+USER=username
+PASSWORD=password
 DB=articledb
 ORIGIN=http://localhost:8080
 SERVER=http://localhost:9000/api/v1/
@@ -56,7 +57,7 @@ SERVER=http://localhost:9000/api/v1/
 
 #### Database
 
-login to mysql workbench or something else that you prefer with credentials from the .env file and run:
+login to mysql workbench or something else with same credentials from .env and run:
 
 ```js
 
