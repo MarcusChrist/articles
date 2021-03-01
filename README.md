@@ -38,7 +38,7 @@ Server now runs on localhost:9000
 
 
 
-#### .ENV
+#### .env
 
 Create a .env file in backend directory and write:
 
@@ -62,20 +62,22 @@ login to mysql workbench or something else that you prefer with credentials from
 
 create schema articledb;
 
-create table articledb.users (id INT AUTO_INCREMENT PRIMARY KEY,
-						firstName varchar(50) NOT NULL,
-						lastName varchar(50) NOT NULL,
-						email varchar(50) NOT NULL unique,
-						password varchar(255) NOT NULL,
-						role varchar(20) NOT NULL,
-						createdt datetime NOT NULL DEFAULT CURRENT_TIMESTAMP);
+create table articledb.users (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	firstName varchar(50) NOT NULL,
+	lastName varchar(50) NOT NULL,
+	email varchar(50) NOT NULL unique,
+	password varchar(255) NOT NULL,
+	role varchar(20) NOT NULL,
+	createdt datetime NOT NULL DEFAULT CURRENT_TIMESTAMP);
 
-create table articledb.articles (id INT AUTO_INCREMENT PRIMARY KEY,
-						name varchar(50) NOT NULL,
-						url varchar(255) NOT NULL,
-						type varchar(12),
-						description varchar(255),
-						createdt datetime NOT NULL DEFAULT CURRENT_TIMESTAMP);
+create table articledb.articles (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	name varchar(50) NOT NULL,
+	url varchar(255) NOT NULL,
+	type varchar(12),
+	description varchar(255),
+	createdt datetime NOT NULL DEFAULT CURRENT_TIMESTAMP);
 
 ```
 
