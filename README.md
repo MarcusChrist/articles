@@ -31,7 +31,7 @@ cd  backend
 
 npm  install  // First time only
 
-npm  run  server
+npm  run  server // Do this after creating and configuring .env file and database (steps below)
 
 ```
 Server now runs on localhost:9000
