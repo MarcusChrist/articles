@@ -7,7 +7,7 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser')
 const logger = require('morgan');
 const cors = require("cors");
-var favicon = require('serve-favicon');
+// var favicon = require('serve-favicon');
 var fs = require('fs');
 
 
@@ -27,7 +27,7 @@ const deleteArticleRouter = require('./src/articles/delete');
 
 const app = express();
 app.use(helmet());
-console.log("Server started at: " + process.env.SERVER.replace("/api/v1/", "") + (process.env.PORT || ""));
+// console.log("Server started at: " + process.env.SERVER.replace("/api/v1/", "") + (process.env.PORT || ""));
 var corsOptions = {
   origin: process.env.ORIGIN,
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
@@ -43,7 +43,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(favicon(path.join(__dirname,'src','public','images','favicon.png')));
+// app.use(favicon(path.join(__dirname,'src','public','images','favicon.png')));
 
 app.use("/api/v1/users/getAccess", getAccessRouter);
 app.use("/api/v1/users/registerFirst", registerFirstRouter);
